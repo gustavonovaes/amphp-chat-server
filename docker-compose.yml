@@ -1,0 +1,14 @@
+version: "3.7"
+services:
+  php:
+    build: .
+    volumes:
+      - .:/app
+    working_dir: /app
+    ports: 
+      - 5000:5000
+    environment: 
+      - URI=0.0.0.0
+      - PORT=5000
+      - TIMEZONE=America/Recife
+    command: sh -c "composer install && ./src/server.php"

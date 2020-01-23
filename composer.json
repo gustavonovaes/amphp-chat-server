@@ -1,0 +1,16 @@
+{
+    "require": {
+        "php": "^7.4",
+        "amphp/amp": "^2.4",
+        "amphp/socket": "^1.1",
+        "filp/whoops": "^2.7"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        }
+    },
+    "scripts": {
+        "start": "./src/server.php"
+    }
+}
